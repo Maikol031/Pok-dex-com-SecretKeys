@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pokedex</title>
+</head>
+<body>
+    <main class="body-pokedex">
+        <header>
+            <section class="header-pokedex-1">
+                <div class="led-header">
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                </div>
+                <div class="glass-cam">
+                </div>
+
+            </section>
+            <section class="header-pokedex-2">
+    
+            </section>
+        </header>
+        <section class="display-border">
+            <div class="display-border-2">
+                <div class="display">
+                    <img src="#" alt="" class="pokemon-img">
+                    <img src="public/pokeBackground.png" alt="pokeBackground" class="pokeBackground">
+                </div>
+            </div>
+        </section>
+        <section class="types-section">
+            <div class="type-1">
+                <span class="type-1-span"></span>
+            </div>
+            <div class="type-2">
+                <span class="type-2-span"></span>
+            </div>
+        </section>
+        <section class="buttons">
+            <div class="content-button">
+                <div class="button-test">
+                    <button type="button" onclick="confirmSecret()"></button>
+                </div>
+            </div>
+            <div class="input-display">
+                <input type="search" class="input-search" placeholder="Digite um nome">
+                <div class="display-name">
+                    <span class="id-pokemon"></span>
+                    <span class="name-pokemon"></span>
+                </div>
+            </div>
+            <div class="arrows">
+                <div class="arrow-updown">
+                    <div class="arrow-up"><button type="button" onclick="upKey()"></button></div>
+                    <div class="arrow-leftright">
+                        <div class="arrow-left"><button type="button" onclick="previusPoke()"></button></div>
+                        <div class="middle-button"></div>
+                        <div class="arrow-rigth"><button type="button" onclick="nextPoke()"></button></div>
+                    </div>
+                    <div class="arrow-down"><button type="button" onclick="downKey()"></button></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

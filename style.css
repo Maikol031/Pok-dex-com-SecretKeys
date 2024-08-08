@@ -1,0 +1,295 @@
+@font-face {
+    font-family: 'pokefont';
+    src: url('public/Pokemon\ Solid.ttf') format('truetype');
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.body-pokedex {
+    width: 30rem;
+    height: 50rem;
+    background: linear-gradient(to bottom, #b52626 21%,#f6290c 51%,#f02f17 71%,#e73827 100%); 
+    border: 3px solid black;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 10.4rem;
+    background-color: black;
+    clip-path: polygon(100% 0, 100% 52%, 55% 52%, 42% 100%, 0 100%, 0 0);
+}
+
+.header-pokedex-1 {
+    display: flex;
+    flex-direction: column;
+    width: 54%;
+    height: 10rem;
+    background-color: rgb(165, 27, 27);
+    clip-path: polygon(0% 0%, 100% 0, 100% 50%, 75% 100%, 0% 100%);
+    border-bottom: 3px solid black;
+    
+}
+
+.led-header{
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+    margin-left: 9.6rem;
+    width: 7rem;
+    height: 30px;
+}
+
+.red{
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(224, 42, 42);
+}
+
+.yellow{
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+}
+
+.green {
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    animation: green-blink 1.5s infinite; /* Duração da animação ajustada */
+}
+
+@keyframes green-blink {
+    0%, 100% {
+        background-color: green; /* Cor inicial e final */
+    }
+    50% {
+        background-color: lightgreen; /* Cor intermediária */
+    }
+}
+
+
+.glass-cam {
+    background-color: rgb(61, 155, 199);
+    width: 80px;
+    height: 80px;
+    margin-left: 4rem;
+    border: 3px solid white; /* Mantém a borda visível */
+    border-radius: 100%;
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        background-color: rgb(61, 155, 199);
+    }
+    50% {
+        background-color: rgb(153, 212, 240);
+    }
+}
+
+.header-pokedex-2 {
+    width: 46%;
+    height: 5rem;
+    background-color: rgb(165, 27, 27);    border-bottom: 3px solid black;
+}
+
+.display-border {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 25rem;
+}
+
+.display-border-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    width: 80%;
+    height: 20rem;
+    background-color: rgb(216, 216, 216);
+    border: 4px inset black;
+    border-radius: 2%;
+}
+
+.display{
+    width: 80%;
+    height: 16rem;
+    background-color: black;
+    border-radius: 2%;
+}
+
+.pokeBackground{
+    width: 100%;
+    height: 16rem;
+    border: 1px solid black;
+    border-radius: 2%;
+}
+
+.input-display{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+}
+
+.input-search{
+    height: 2rem;
+}
+
+.types-section{
+    height: 2rem;
+    margin-bottom: 3rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.type-1{
+    border: 2px inset black;
+    width: 5rem;
+    height: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+.type-1-span{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+
+.type-2{
+    border: 2px inset black;
+    width: 5rem;
+    height: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+.type-2-span{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 10rem;
+   
+}
+
+.pokemon-img {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    opacity: 80%;
+    transform: translate(-45%, 0);
+    height: 15%;
+}
+
+.display-name{
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    gap: 1rem;
+    font-family: 'pokefont';
+    color: rgba(0, 0, 0, 0.719);
+    align-items: center;
+    width: 13rem;
+    height: 6rem;
+    background-color: rgb(8, 151, 56);
+    border: 4px inset black;
+    box-shadow: inset;
+
+}
+
+.content-button{
+    height: 11rem;
+}
+
+.button-test>button{
+    cursor: pointer;
+    border-radius: 100%;
+    width: 3rem;
+    height: 3rem;
+    background-color: black;
+}
+
+.button-test>button:hover{
+    transform: scale(1.1);
+}
+
+.arrows{
+    width: 6rem;
+    height: 6rem;
+}
+
+.arrow-updown{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrow-leftright{
+    display: flex;
+
+}
+.middle-button{
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid red;
+    background-color: black;
+}
+
+.arrow-up>button{
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(0, 0, 0);
+}
+
+.arrow-up>button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.arrow-down>button{
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(0, 0, 0);
+}
+
+.arrow-down>button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.arrow-left>button{
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(0, 0, 0);
+}
+
+.arrow-left>button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.arrow-rigth>button{
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(0, 0, 0);
+}
+
+.arrow-rigth>button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
